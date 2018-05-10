@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <div class="title row">
+                <div class="col-md-12 head">
+                    <h1>
+                        <i class="fa fa-diamond" aria-hidden="true"></i> 
+                        <script type="text/javascript">
+                            var message = "Blackjack";
+                            var colors = new Array("#7A0a0a","#000");
+                            for (var i = 0; i < message.length; i++)
+                                document.write("<span style=\"color:" + colors[(i % colors.length)] + ";\">" + message[i] + "</span>");
+                        </script>
+                    </h1>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="money col-md-6 text-left">
+                    <span id="current_bet"><span id="betTxt">Current Bet: $0</span></span>
+                </div>
+                <div class="money col-md-6 text-right">
+                    <span>Money: $<span id=money>1000</span></span>
+                </div>
+            </div>
+
+            <div class="container game-board">
+                <div class="alert" id="alert" role="alert">
+                    <h3 id="win"></h3>
+                </div>
+    
+                <div class="alert alert-warning" id="error" role="alert">
+                    <h3 id="err"></h3>
+                </div>
+                <div class="col-md-12 bets">
+                    <h2><em>Place Bet</em></h2>
+                    <div>
+                        <button type="button" class="btn btn-success" id="bet10">$ 10</button>
+                        <button type="button" class="btn btn-success" id="bet20">$ 20</button>
+                        <button type="button" class="btn btn-success" id="bet50">$ 50</button>
+                        <button type="button" class="btn btn-success" id="bet100">$ 100</button>
+                        <button type="button" class="btn btn-warning" id="resetBet">Reset</button>
+                    </div>
+                    <div id="bets">$0</div>
+                </div>
+                <button type="button" class="btn btn-primary" id="control">Start Game</button>
+                <div class ="cards row">
+                    <div class="col-md-12">
+                        <h2 class="name">User value: <span id="uScore">0</span></h2>
+                        <div class="row" id="user">
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <h2 class="name">Dealer value: <span id="dScore">0</span></h2>
+                        <div class="row" id="dealer">
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary" id="playAgain">Play Again?</button>
+            </div>
+
+            <div class="buttons">
+                <button type="button" class="btn btn-primary" id="hit">Hit</button>
+                <button type="button" class="btn btn-warning" id="stand">Stand</button>
+                <button type="button" class="btn btn-info" id="double">Double</button>
+                <button type="button" class="btn btn-danger" id="surr">Surrender</button>
+            </div>
+
+        </div>
+    </div>
+    <!-- javascript and jquery  -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <!-- Change JavaScript link  -->
+    <script src="game_v3.js"></script>
+</body>
+
+</html>

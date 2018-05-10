@@ -1,0 +1,131 @@
+body {
+    font-family: 'Muli', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn {
+    margin: 10px;
+}
+
+.alert {
+    display: none;
+    margin: 0;
+}
+
+.cards {
+    display: none;
+}
+
+.jumbotron {
+    margin-top: 40px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.money p {
+    margin : 0 0 0 0;
+}
+
+.bets {
+    padding-bottom: 50px;
+}
+
+.black{
+    background: black;
+    width: 200px;
+    height: 300px;
+}
+
+
+.red{
+    background: red;
+    width: 200px;
+    height: 300px;
+}
+
+.game-board {
+    padding: 25px 0 10px 25px ;
+    width : 1000px;
+    height : 700px;
+}
+
+.buttons {
+    display : none;
+}
+
+.buttons .btn {
+    margin: 10px
+}
+
+.dealerCards {
+    display: none;
+}
+
+.head {
+    padding-right: 0;
+}
+
+.alert h3 {
+    margin: 0;
+}
+
+.jumbotron .money {
+    margin-bottom: 5px;
+}
+
+.userCards{
+    height: 200px;
+    width: 150px;
+    background: #0099FF;
+    border: 2px solid black;
+}
+
+.dealerCards{
+    height: 200px;
+    width: 150px;
+    background: #520404;
+    border: 2px solid black;
+}
+
+.userCards p {
+    font-size: 42px;
+    margin: 65px 0;
+}
+
+.dealerCards p {
+    font-size: 42px;
+    margin: 65px 0;  
+    color: white; 
+}
+
+.name {
+    font-size : 36px;
+    font-weight: bold;
+}
+
+.money {
+    font-size : 22px;
+}
+
+.bets h2 {
+    font-size: 72px;
+    margin-bottom: 25px;
+}
+
+#bets {
+    font-size : 72px;
+    margin-top: 50px;
+}
+
+#playAgain {
+    display: none;
+}
+
+#current_bet {
+    display : none;
+}
